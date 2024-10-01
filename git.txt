@@ -1,0 +1,19 @@
+DOM
+DOM TREE STRUCTURE:
+TARGET A DOM
+1- TagName()
+2- ClassName()
+3- Id()
+
+target:
+document
+document.all
+document.all[0]
+docunemt.head
+document.body
+document.title
+document.domain
+document.URL
+document.doctype
+dfkshjkrhgjshdjkh
+new work update
