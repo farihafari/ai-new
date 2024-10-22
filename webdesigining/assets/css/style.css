@@ -1,0 +1,19 @@
+
+.text{
+    text-transform: uppercase;
+    color: red;
+    text-align: justify;
+  }
+  p{
+    font-size: 20px;
+    color: blue;
+  } 
+  #heading{
+    color: green;
+  }
+  div{
+    width: 70%;
+    height: 500px;
+    border: 1px solid green;
+    background-color: brown;
+  }
