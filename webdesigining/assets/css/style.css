@@ -15,5 +15,18 @@
     width: 70%;
     height: 500px;
     border: 1px solid green;
-    background-color: brown;
+    /* background-color: brown; */
+  }
+  a:link{
+    color: brown;
+    
+  }
+  a:visited{
+    color: green;
+  }
+  a:hover{
+    color: blue;
+  }
+  a:active{
+    color: burlywood;
   }
