@@ -1,0 +1,13 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+
+}
+div:hover{
+    width: 400px;
+    margin-left: 100px;
+}

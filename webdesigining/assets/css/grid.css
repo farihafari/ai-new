@@ -33,9 +33,17 @@
 {
     grid-column: 1/-1;
     grid-row: 4/7;
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: 200px;
+    justify-content: space-evenly;
+    align-content: center;
 
 }
 .c6{
     grid-column: 1/-1;
+}
+.child-grid{
+    border: 1px solid black;
 }
     
