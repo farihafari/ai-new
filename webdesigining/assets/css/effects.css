@@ -2,12 +2,55 @@ div{
     width: 200px;
     height: 200px;
     background-color: blue;
-    transition-property: all;
+    /* transition-property: all;
     transition-duration: 5s;
-    transition-timing-function: linear;
-
+    transition-timing-function: linear; */
+    border-radius: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+animation: animateeffect 4s ease infinite;
 }
-div:hover{
+/* header css */
+/* div:hover{
     width: 400px;
     margin-left: 100px;
-}
+} */
+ @keyframes animateeffect {
+    /* from{
+        background-color:blue;
+    }
+    to{
+        background-color: brown;
+    } */
+     0%{
+        background-color:blue;
+        top: 0%;
+        left: 0%;
+        border-radius: 0%;
+     }
+     20%{
+        background-color:rgb(41, 182, 16);
+        top: 0%;
+        left: 30%;
+        border-radius: 10%;
+
+     }
+     40%{
+        background-color:rgb(212, 108, 34);
+        top: 30%;
+        left: 30%;
+        border-radius: 30%;
+
+     }
+     60%{
+        background-color:rgb(16, 169, 36);
+        top: 30%;
+        left: 0%;
+        border-radius: 50%;
+
+     }
+     100%{
+        background-color:rgb(154, 140, 17);
+     }
+ }
