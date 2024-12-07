@@ -8,7 +8,8 @@ if(inital && final){
        if(final>inital){
 while(inital<=final){
 d.innerHTML+=`<p>your loop iteration count is ${inital}</p>`;
-    inital++;
+// document.write(`<p>your loop iteration count is ${inital}</p>`)    
+
 }
        }else{
         alert("termination value must be greater then initial");
