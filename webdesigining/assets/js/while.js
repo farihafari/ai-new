@@ -7,6 +7,7 @@ if(inital && final){
     if(!isNaN(inital && final)){
        if(final>inital){
 while(inital<=final){
+    inital++;
 d.innerHTML+=`<p>your loop iteration count is ${inital}</p>`;
 // document.write(`<p>your loop iteration count is ${inital}</p>`)    
 
