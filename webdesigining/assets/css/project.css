@@ -1,0 +1,7 @@
+.nav-link , .navbar-brand{
+    font-weight: 500;
+    color: brown;
+}
+.navbar{
+    background-color: rgba(245, 221, 190, 0.656);
+}
