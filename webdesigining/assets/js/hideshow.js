@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $('p').hide('slow');
+    })
+    $("#show").click(function(){
+        $('p').show('fast');
+    })
+    $("#toggle").click(function(){
+        $('p').toggle(3000);
+    })
+    $("#btn").click(function(){
+        let inp = $("#name").val();
+        $('p').html(inp).css({
+            'background-color':"blue",
+            "color":"white",
+            "text-transform":"uppercase"
+        });
+    })
+})
