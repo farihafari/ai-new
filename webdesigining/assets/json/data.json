@@ -1,0 +1,33 @@
+[
+    {
+        "name":"web desigin",
+        "price":"50k",
+        "pages":"3 to 5",
+        "hosting":"10% charge extra",
+        "image":"assets/images/wb4.jpeg"
+    },
+    {
+        "name":"web development",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"assets/images/d2.jpeg"
+        
+    },
+    {
+        "name":"digital marketing",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"assets/images/dg1.jpeg"
+        
+    },
+    {
+        "name":"Mobile Application development",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"assets/images/m2.jpeg"
+        
+    }
+]
