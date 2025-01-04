@@ -1,0 +1,60 @@
+{
+    "web designing":[
+        {
+            "name":"static ecommerce",
+            "technology":"html css javacsriopt",
+            "price":"150k",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+              "image":"assets/images/d2.jpeg",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "name":"fashion inn",
+            "price":"50k",
+            "technology":"react tailwind javascript",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+            "image":"assets/images/wb4.jpeg",
+             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "name":"course house",
+            "price":"50k",
+            "technology":"html css javacsript bootststrap 5",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+            "image":"assets/images/wb4.jpeg",
+             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        }
+    ],
+    "web Development":[
+        {
+            "name":"ecommerce",
+            "price":"150k",
+            "technology":"html css javacsript php",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+            "image":"assets/images/d2.jpeg",
+            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "name":"fashion inn",
+            "price":"50k",
+            "technology":"react laravel 11",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+            "image":"assets/images/d2.jpeg",
+             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "name":"daraz",
+            "price":"50k",
+            "technology":"react php",
+            "pages":"3 to 5",
+            "hosting":"10% charge extra",
+            "image":"assets/images/d2.jpeg",
+             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        }
+    ]
+}

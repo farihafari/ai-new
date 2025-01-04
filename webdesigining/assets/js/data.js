@@ -17,13 +17,16 @@ let i ="";
 // $("#x").html(i);
 // categories
 $.each(data1,function(indexes,objects){
+  let catObj = objects.name.split(" ").join("").toLowerCase();
+//   console.log(catObj)
+
     i+=`<div class="col-lg-3 col-md-6 mt-2">
                 <div class="card" >
                     <img src="${objects.image}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title py-2">${objects.name}</h5>
                         
-                        <a href="" class="btn btn-outline-success">More</a>
+                        <a href="product.html?category=${catObj}" class="btn btn-outline-success">More</a>
                     </div>
                 </div>
             </div>`
