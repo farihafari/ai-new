@@ -7,13 +7,58 @@
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
      <script src="assets/jquery/jquery-3.7.1.min.js"></script>
 </head>
+<style>
+    #box{
+        display: none;
+    }
+</style>
 <body>
-    <h1></h1>
+    <!-- <h1></h1> -->
+    <input type="text" name="" id="name">
+    <input type="text" name="" id="type">
+    <button class="btn btn-info" id="see">click</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5" id="box">
+                <h1 id="data"></h1>
+                <button class="btn btn-success" id="btn"></button>
+            </div>
+        </div>
+    </div>
     <script>
-       $(document).ready(function(){
-        // alert('ok');
-        $("h1").html('do more write less')
-       })
+    //    $(document).ready(function(){
+    //     // alert('ok');
+    //     $("h1").html('do more write less')
+    //    })
+    $(document).ready(function(){
+        $("#see").click(function(){
+            let a = $("#name").val();
+            let b = $("#type").val();
+            // let printBtn = $("#btn");
+            $("#box").css({
+                "display":"block"
+            });
+          
+            if(b == "hide"){
+                $("#btn").text("show");
+                $("#data").html("data hide");
+            }else{
+                $("#btn").text("hide");
+                $("#data").html(a);
+            }
+            $("#btn").click(function(){
+                let zz = $(this).text();
+                // console.log(zz)
+                if(zz=="hide"){
+                    $("#btn").text("show");
+                    $("#data").html("data hide");
+                }else{
+                    $("#btn").text("hide");
+                $("#data").html(a);
+                }
+            })
+        })
+    })
     </script>
 </body>
 </html>

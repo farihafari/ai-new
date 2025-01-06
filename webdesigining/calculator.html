@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 60%;
+    }
+</style>
+
+<body>
+    <div class="container py-3">
+        <h1 class="text-capitalize text-success text-center">standard calculator</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <table border="1" class="table">
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" class="form-control" name="" id="inp">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><button class="btn btn-outline-info" onclick="num(1)">1</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(2)">2</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(3)">3</button></th>
+                        <th><button class="btn btn-outline-info" onclick="operators('+')">+</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="btn btn-outline-info" onclick="num(4)">4</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(5)">5</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(6)">6</button></th>
+                        <th><button class="btn btn-outline-info" onclick="operators('-')">-</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="btn btn-outline-info" onclick="num(7)">7</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(8)">8</button></th>
+                        <th><button class="btn btn-outline-info" onclick="num(9)">9</button></th>
+                        <th><button class="btn btn-outline-info" onclick="operators('*')">*</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="btn btn-outline-info" onclick="num(0)">0</button></th>
+                        <th><button class="btn btn-outline-info" onclick="operators('/')">/</button></th>
+                        <th><button class="btn btn-outline-info" onclick="calculation()">=</button></th>
+                        <th><button class="btn btn-outline-info">CC</button></th>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><button class="btn btn-outline-info d-block">delete</button></th>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/calculator.js"></script>
+</body>
+
+</html>
