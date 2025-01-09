@@ -3,7 +3,7 @@ let aurl = window.location.href;
 let getUrl = new URL(aurl);
 // console.log(getUrl);
 let CatName  = getUrl.searchParams.get("category");
-console.log(CatName)
+// console.log(CatName)
 $(document).ready(function(){
     let i="";
     let mod ="";
@@ -38,7 +38,7 @@ mod+=`    <!-- Modal -->
     <div class="col-lg-3 py-3">
         <img src="${objects.image}" class="img-fluid" alt="">
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-8">
         <div class="card-body">
             <h5 class="card-title">name: ${objects.name}</h5>
             <p class="card-text">category: ${keys}</p>
@@ -46,7 +46,12 @@ mod+=`    <!-- Modal -->
             <p class="card-text">PKR: ${objects.price}</p>
             <p class="card-text">Pages: ${objects.pages}</p>
             <p class="card-text">Hosting ${objects.hosting}</p>
-            
+            <div>
+    <button class="btn btn-info" onclick="decreament('${indexes}')">-</button>
+    <input type="text" id="num${indexes}" value="1">
+    <button class="btn btn-info" onclick="increament('${indexes}')">+</button>
+    <span id="err${indexes}"></span>
+</div>
 
            
           </div>
@@ -56,7 +61,7 @@ mod+=`    <!-- Modal -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-primary" onclick="AddToCart('${catObj+indexes}')">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -73,4 +78,75 @@ mod+=`    <!-- Modal -->
             // console.log(proData);
         }
     })
+
 })
+// increament
+let count =1; 
+function increament(id){
+  // console.log(id)
+count++;
+$("#num"+id).val(count)
+$("#err"+id).html("");
+}
+
+function decreament(id){
+  if(count>1){
+    count--;
+    $("#num"+id).val(count);
+   
+  }
+  else{
+    $("#num"+id).val(count)
+$("#err"+id).html(" at least one product should be add into cart").css({
+  "display":"block",
+  "margin-top":"3px",
+  "color":"red",
+  "font-weight":"bold"
+});
+
+  }
+  // console.log(id)
+
+}
+// add to cart
+function AddToCart(addId){
+// console.log(addId);
+
+$.ajax({
+  url:"assets/json/project.json",
+  type:"get",
+  success:function(addData){
+      $.each(addData,function(addkeys,addarrays){
+let addObj = addkeys.split(" ").join("").toLowerCase();
+$.each(addarrays,function(addindex,addobjects){
+  if(addObj+addindex == addId){
+    let qty = document.querySelector("#num"+addindex).value;
+console.log(qty);
+// console.log(addObj+addindex);
+let stdata = localStorage.getItem("products");
+// console.log(JSON.parse(stdata))
+// console.log([]);
+if(stdata == null){
+  localStorage.setItem("products","[]");
+} 
+let oldData = JSON.parse(stdata);
+let addproducts ={
+  name:addobjects.name,
+  price:addobjects.price,
+  hosting:addobjects.hosting,
+  image:addobjects.image,
+  quantity:qty
+
+}
+ oldData.push(addproducts);
+ localStorage.setItem("products",JSON.stringify(oldData));
+ alert("data add into cart");
+ location.assign("project.html");   
+  }
+})
+})
+
+      }
+    })
+}
+// localStorage.clear();
